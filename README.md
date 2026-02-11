@@ -1,1 +1,1 @@
-# Project-end-term---Code-for-Everyone
+# Project endterm - Code for Everyone
