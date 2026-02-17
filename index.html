@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lí chi tiêu</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- <script src="./assets/js/main.js" defer></script> -->
+</head>
+
+<body>
+    <div class="container">
+        <img src="./title.jpg" alt="">
+        <header>
+            <h1>Xin chào bạn!</h1>
+            <p>Đây là tình hình tài chính của bạn hiện tại.</p>
+        </header>
+
+        <section id="view">
+            <div class="view-box" id="box1">
+                <h3>SỐ DƯ HIỆN TẠI</h3>
+                <p id="current-balance">2.000.000đ</p>
+            </div>
+            <div class="view-box" id="box2">
+                <h3>TỔNG THU NHẬP</h3>
+                <p id="total-income">+ <span id="income">5.000.000đ</span></p>
+            </div>
+            <div class="view-box" id="box3">
+                <h3>TỔNG CHI TIÊU</h3>
+                <p id="total-expense">- <span id="expense">3.000.000đ</span></p>
+            </div>
+        </section>
+        <main>
+            <div class="history">
+                <div class="header">
+                    <p>LỊCH SỬ GIAO DỊCH</p>
+                    <div id="add-transaction">
+                        <span>➕</span>
+                        <p>Thêm giao dịch</p>
+                    </div>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>NGÀY</th>
+                            <th>SỐ TIỀN</th>
+                            <th>NỘI DUNG</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>10/05/2024</td>
+                            <td>+ 2.000.000 đ</td>
+                            <td>Lương tháng 5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+
+        <div id="modal" class="modal-appearance modal-hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Thêm giao dịch mới</h2>
+                    <span id="close-btn">❌</span>
+                </div>
+
+                <form action=""></form>
+            </div>
+        </div>
+         
+    </div>
+
+</body>
+
+</html>
