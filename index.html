@@ -61,17 +61,39 @@
         </main>
 
 
-        <div id="modal" class="modal-appearance modal-hidden">
+        <div id="modal">
             <div class="modal-content">
                 <div class="modal-header">
                     <h2>Thêm giao dịch mới</h2>
                     <span id="close-btn">❌</span>
                 </div>
 
-                <form action=""></form>
+                <form id="transaction-form">
+                    <div class="information-form">
+
+                        <div id="date">
+                            <label for="date">Ngày:</label>
+                            <input type="date" id="date">
+                        </div>
+                        <div id="amount">
+                            <label for="amount">Số tiền:</label>
+                            <input type="number" id="amount" placeholder="Nhập số tiền vào đây">
+                        </div>
+                        <div id="description">
+                            <label for="description">Nội dung:</label>
+                            <input type="text" id="description" placeholder="Nhập nội dung vào đây">
+                        </div>
+
+                    </div>
+
+                    <div class="button-group">
+                        <button type="button" id="btn-save">Lưu</button>
+                        <button type="button" id="btn-cancel">Hủy</button>
+                    </div>
+                </form>
             </div>
         </div>
-         
+
     </div>
 
 </body>
