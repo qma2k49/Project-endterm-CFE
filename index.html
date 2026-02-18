@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quản lí chi tiêu</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- <script src="./assets/js/main.js" defer></script> -->
+    <script src="./assets/js/main.js" defer></script>
 </head>
 
 <body>
@@ -20,15 +20,15 @@
         <section id="view">
             <div class="view-box" id="box1">
                 <h3>SỐ DƯ HIỆN TẠI</h3>
-                <p id="current-balance">2.000.000đ</p>
+                <p id="current-balance">0đ</p>
             </div>
             <div class="view-box" id="box2">
                 <h3>TỔNG THU NHẬP</h3>
-                <p id="total-income">+ <span id="income">5.000.000đ</span></p>
+                <p id="total-income">+ <span id="income">0đ</span></p>
             </div>
             <div class="view-box" id="box3">
                 <h3>TỔNG CHI TIÊU</h3>
-                <p id="total-expense">- <span id="expense">3.000.000đ</span></p>
+                <p id="total-expense">- <span id="expense">0đ</span></p>
             </div>
         </section>
         <main>
@@ -50,11 +50,6 @@
                     </thead>
 
                     <tbody>
-                        <tr>
-                            <td>10/05/2024</td>
-                            <td>+ 2.000.000 đ</td>
-                            <td>Lương tháng 5</td>
-                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -73,23 +68,22 @@
 
                         <div id="date">
                             <label for="date">Ngày:</label>
-                            <input type="date" id="date">
+                            <input type="date">
                         </div>
                         <div id="amount">
                             <label for="amount">Số tiền:</label>
-                            <input type="number" id="amount" placeholder="Nhập số tiền vào đây">
+                            <input type="number" placeholder="Nhập số tiền vào đây">
                         </div>
                         <div id="description">
                             <label for="description">Nội dung:</label>
-                            <input type="text" id="description" placeholder="Nhập nội dung vào đây">
+                            <input type="text" placeholder="Nhập nội dung vào đây">
                         </div>
 
                     </div>
 
-                    <div class="button-group">
-                        <button type="button" id="btn-save">Lưu</button>
-                        <button type="button" id="btn-cancel">Hủy</button>
-                    </div>
+                    <p id="note">Vui lòng điền đầy đủ thông tin!</p>
+                    <button type="button" id="btn-save">Lưu</button>
+
                 </form>
             </div>
         </div>
